@@ -7,5 +7,5 @@ import {
 
 export const startPostsLoading = () => ({ type: START_POSTS_LOADING });
 export const setPosts = (payload) => ({ type: SET_POSTS, payload });
-export const stoptPostsLoading = () => ({ type: STOP_POSTS_LOADING });
+export const stopPostsLoading = () => ({ type: STOP_POSTS_LOADING });
 export const setPostsError = (payload) => ({ type: SET_POSTS_ERROR, payload });

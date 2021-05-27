@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Posts } from "./redux/componets/Posts";
+import { Posts } from "./componets/Posts";
 import "./styles.css";
 
 export default function App() {
@@ -13,22 +13,22 @@ export default function App() {
             Завдання. Написати редюсери для ресурсів з сайту
             http://jsonplaceholder.typicode.com/
           </h5>
-          <hr></hr>
-          <br></br>
+          <hr/>
+          <br/>
           <Link to={"/posts"}> posts </Link>
-          <br></br>
+          <br/>
           <Link to={"/comments"}> comments </Link>
-          <br></br>
+          <br/>
           <Link to={"/albums"}> albums </Link>
-          <br></br>
+          <br/>
           <Link to={"/photos"}> photos </Link>
-          <br></br>
+          <br/>
           <Link to={"/todos"}> todos </Link>
-          <br></br>
+          <br/>
           <Link to={"/users"}> users </Link>
-          <br></br>
+          <br/>
           <Switch>
-            <Route exact path={"/posts"} render={() => <Posts />} />
+            <Route exact path={"/posts"} render={() => <Posts/>} />
           </Switch>
         </div>
       </div>
